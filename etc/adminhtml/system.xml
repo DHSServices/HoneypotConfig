@@ -39,7 +39,7 @@
                     <depends>
                         <field id="honeypotreviewenable">1</field>
                     </depends>
-                    <validate>required-entry alphanumeric</validate>
+                    <validate>required-entry</validate>
                     <comment>
                         <![CDATA[Set Honeypot field input tag class="url required".]]>
                     </comment>
