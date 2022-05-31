@@ -21,7 +21,7 @@
                     </depends>
                     <validate>required-entry alphanumeric</validate>
                     <comment>
-                        <![CDATA[Set Honeypot field <input> tag id="url_field".]]>
+                        <![CDATA[Set Honeypot field input tag id="url_field".]]>
                     </comment>
                 </field>
                 <field id="honeypotreviewtitle" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -31,7 +31,7 @@
                     </depends>
                     <validate>required-entry alphanumeric</validate>
                     <comment>
-                        <![CDATA[Set Honeypot field <input> tag title="URL".]]>
+                        <![CDATA[Set Honeypot field input tag title="URL".]]>
                     </comment>
                 </field>
                 <field id="honeypotreviewclass" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -41,7 +41,7 @@
                     </depends>
                     <validate>required-entry alphanumeric</validate>
                     <comment>
-                        <![CDATA[Set Honeypot field <input> tag class="url required".]]>
+                        <![CDATA[Set Honeypot field input tag class="url required".]]>
                     </comment>
                 </field>
             </group>

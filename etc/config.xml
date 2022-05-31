@@ -4,6 +4,9 @@
         <honeypotsettings>
             <product_review_settings>
                 <honeypotreviewenable>0</honeypotreviewenable>
+                <honeypotreviewid>url_field</honeypotreviewid>
+                <honeypotreviewtitle>URL</honeypotreviewtitle>
+                <honeypotreviewclass>url required</honeypotreviewclass>
             </product_review_settings>
         </honeypotsettings>
     </default>
