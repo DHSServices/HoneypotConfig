@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/system_file.xsd">
+    <system>
+        <section id="honeypotsettings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Honeypot Settings</label>
+            <tab>dhsservices</tab>
+            <resource>DHSServices_HoneypotConfig::configurations</resource>
+            <group id="product_review_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Product Review Settings</label>
+                <field id="honeypotreviewenable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Honeypot Product Review enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[Enable Honeypot on Product Reviews.]]>
+                    </comment>
+                </field>
+                <field id="honeypotreviewid" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Honeypot Product Review input id</label>
+                    <depends>
+                        <field id="honeypotreviewenable">1</field>
+                    </depends>
+                    <validate>required-entry alphanumeric</validate>
+                    <comment>
+                        <![CDATA[Set Honeypot field <input> tag id="url_field".]]>
+                    </comment>
+                </field>
+                <field id="honeypotreviewtitle" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Honeypot Product Review input label, title, placeholder</label>
+                    <depends>
+                        <field id="honeypotreviewenable">1</field>
+                    </depends>
+                    <validate>required-entry alphanumeric</validate>
+                    <comment>
+                        <![CDATA[Set Honeypot field <input> tag title="URL".]]>
+                    </comment>
+                </field>
+                <field id="honeypotreviewclass" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Honeypot Product Review input class, name</label>
+                    <depends>
+                        <field id="honeypotreviewenable">1</field>
+                    </depends>
+                    <validate>required-entry alphanumeric</validate>
+                    <comment>
+                        <![CDATA[Set Honeypot field <input> tag class="url required".]]>
+                    </comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

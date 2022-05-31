@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <honeypotsettings>
+            <product_review_settings>
+                <honeypotreviewenable>0</honeypotreviewenable>
+            </product_review_settings>
+        </honeypotsettings>
+    </default>
+</config>
